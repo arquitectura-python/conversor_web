@@ -8,7 +8,8 @@ from werkzeug.utils import secure_filename
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    error = ""
+    return render_template("index.html", error = request.args.get('error'))
 
 def allowed_image(filename):
 
@@ -38,7 +39,8 @@ def recibir_imagen():
                 print(extension)
                 nuevo_nombre =  convertir_imagen(image,extension)
                 return redirect(url_for('descargar_imagen',nombre_imagen = nuevo_nombre))
-
+            else:
+                return redirect(url_for('index', error = "Archivo no valido"))
 
 @app.route("/download-image/<nombre_imagen>")
 def descargar_imagen(nombre_imagen):
