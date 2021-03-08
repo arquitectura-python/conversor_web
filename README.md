@@ -33,3 +33,15 @@ Una vez tenemos nuestro entorno activo debemos instalar los requerimientos
 ```bash
 pip install -r requirements.txt
 ```
+
+## Ejecutar aplicacion 
+
+Cuando se tengan todas las dependencias instaladas hay que ejecutar el proyecto para eso ejecuctamos el siguinte comando 
+```python
+  flask run
+```
+
+también se puede ejecutar de la siguiente manera
+```python
+ python run.py
+```
