@@ -5,18 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap-reboot.css') }}">
 
     <title>Conversor de imagenes </title>
 </head>
 
-<header style="background-color: #F04A7D; padding-bottom: 6px; width: 100%;" class="col-lg-12 col-md-12">
+<header style="background-color: #F04A7D; padding-bottom: 6px;">
     <br>
     <h1 style="text-align: center; color: aliceblue;">Conversor Imagenes</h1>
 </header>
 
-<body style="background:  #D6EAF8;">
+<body>
     <div class="container">
         <div class="row">
             <div class="col">
@@ -25,28 +23,30 @@
                 <hr>
                 {% if error %}
 
-                <div class="alert alert-dark " role="alert">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
-                            aria-hidden="true">&times;</span></button>
+
+                <div class="alert alert-danger">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                     <strong>{{error}}</strong>
                 </div>
+
+
                 {% endif %}
                 <form action=" /upload-image" method="POST" enctype="multipart/form-data">
 
 
                     <div>
                         <div class="">
-                            <img style="height: 50px; width: 80px;" id="imagenArchivo" class="col-lg-2 col-sm-1"
+                            <img style="height: 50px; width: 80px;" id="imagenArchivo" class="col-lg-2"
                                 src="{{ url_for('static', filename='imagen/archi.png') }}" alt="">
-                            <label for="" class="col-sm-9">Seleccione la imagen a convertir</label>
+                            <label for="">Seleccione la imagen a convertir</label>
                             <br>
                         </div>
                     </div>
 
                     <div class="container" style="text-align: center;">
 
-                        <input type="file" class="col-lg-5 col-sm-2" name="image" id="image">
-                        <img style="height: 45px; width: 90px;" id="imagenFlecha" class="col-lg-3 col-sm-1"
+                        <input type="file" class="col-lg-5" name="image" id="image">
+                        <img style="height: 45px; width: 90px;" id="imagenFlecha" class="col-lg-3"
                             src="{{ url_for('static', filename='imagen/flechaConv.png') }}" alt="">
 
                         <select class="col-lg-5 custom-select custom-select-lg mb-1" name="extension" id="extension">
@@ -61,35 +61,20 @@
 
                     <div style="text-align: center;">
                         <br>
-                        <button style="text-align: center; background-color: #6c757d; color: white; font-weight: bold;" type="submit"
+                        <button style="text-align: center; background-color: #6c757d;" type="submit"
                             class="col-lg-2 btn">Convertir</button>
                         <br>
                         <div></div>
                     </div>
-                    <hr>
                 </form>
+
+
+                
+
 
             </div>
         </div>
     </div>
-
-    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
-
-    <script src="{{ url_for('static', filename='js/popper.min.js') }}"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="{{ url_for('static', filename='js/bootstrao.min.js') }}"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
-    <script>
-        //Autoclose
-        window.setTimeout(function () {
-            $(".alert").fadeTo(1500, 0).slideDown(1000, function () {
-                $(this).remove();
-            });
-        }, 3000); //2 segundos y desaparece
-    </script>
 </body>
 
 </html>
