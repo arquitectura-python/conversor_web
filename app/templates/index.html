@@ -4,42 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+
     <title>Conversor de imagenes </title>
 </head>
 
+<header style="background-color: #F04A7D; padding-bottom: 6px;">
+    <br>
+    <h1 style="text-align: center; color: aliceblue;">Conversor Imagenes</h1>
+</header>
+
 <body>
-    <h1>Hola mundo este es el template de html </h1>
     <div class="container">
         <div class="row">
             <div class="col">
-
-                <h1>Upload an image</h1>
+                <br>
+                <h3>Convierte tus imagenes a cualquiera de los formatos que tenemos disponibles para ti</h3>
                 <hr>
                 {% if error %}
-                {{error}}
-                {% endif %}
-                <form action="/upload-image" method="POST" enctype="multipart/form-data">
 
-                    <div class="form-group">
-                        <label>Select image</label>
-                        <div class="custom-file">
-                            <input type="file" class="custom-file-input" name="image" id="image">
-                            <label class="custom-file-label" for="image">Select image...</label>
-                        </div>
-                        <div class="form-group">
-                            <label for="">Seleccione la extensión a convertir</label>
-                            <select name="extension" id="extension">
-                                <option value="png">png</option>
-                                <option value="jpg">jpg</option>
-                                <option value="bmp">bmp</option>
-                                <option value="gif">gif</option>
-                            </select>
+
+                <div class="alert alert-danger">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <strong>{{error}}</strong>
+                </div>
+
+
+                {% endif %}
+                <form action=" /upload-image" method="POST" enctype="multipart/form-data">
+
+
+                    <div>
+                        <div class="">
+                            <img style="height: 50px; width: 80px;" id="imagenArchivo" class="col-lg-2"
+                                src="{{ url_for('static', filename='imagen/archi.png') }}" alt="">
+                            <label for="">Seleccione la imagen a convertir</label>
+                            <br>
                         </div>
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Upload</button>
+                    <div class="container" style="text-align: center;">
 
+                        <input type="file" class="col-lg-5" name="image" id="image">
+                        <img style="height: 45px; width: 90px;" id="imagenFlecha" class="col-lg-3"
+                            src="{{ url_for('static', filename='imagen/flechaConv.png') }}" alt="">
+
+                        <select class="col-lg-5 custom-select custom-select-lg mb-1" name="extension" id="extension">
+                            <option value="png">png</option>
+                            <option value="jpg">jpg</option>
+                            <option value="bmp">bmp</option>
+                            <option value="gif">gif</option>
+                        </select>
+
+
+                    </div>
+
+                    <div style="text-align: center;">
+                        <br>
+                        <button style="text-align: center; background-color: #6c757d;" type="submit"
+                            class="col-lg-2 btn">Convertir</button>
+                        <br>
+                        <div></div>
+                    </div>
                 </form>
+
+
+                
+
 
             </div>
         </div>
