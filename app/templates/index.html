@@ -14,7 +14,7 @@
     <h1 style="text-align: center; color: aliceblue;">Conversor Imagenes</h1>
 </header>
 
-<body>
+<body style="background: #EBF5FB;">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -22,17 +22,14 @@
                 <h3>Convierte tus imagenes a cualquiera de los formatos que tenemos disponibles para ti</h3>
                 <hr>
                 {% if error %}
-
-
-                <div class="alert alert-danger">
-                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <div class="alert alert-dark" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
                     <strong>{{error}}</strong>
                 </div>
 
-
                 {% endif %}
                 <form action=" /upload-image" method="POST" enctype="multipart/form-data">
-
 
                     <div>
                         <div class="">
@@ -61,20 +58,32 @@
 
                     <div style="text-align: center;">
                         <br>
-                        <button style="text-align: center; background-color: #6c757d;" type="submit"
+                        <button style="text-align: center; background-color: #6c757d; font-weight: bold; color: white;" type="submit"
                             class="col-lg-2 btn">Convertir</button>
                         <br>
+                        <hr>
                         <div></div>
                     </div>
                 </form>
-
-
-                
-
-
             </div>
         </div>
     </div>
+
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/popper.min.js') }}"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        //Autoclose
+        window.setTimeout(function () {
+            $(".alert").fadeTo(1500, 0).slideDown(1000, function () {
+                $(this).remove();
+            });
+        }, 3000); //2 segundos y desaparece
+    </script>
 </body>
 
 </html>
