@@ -24,7 +24,7 @@ Se ejecuta este comando en Python para importar la libreria de Pillow, antes de 
 para crear nuestro entorno virtual primero debemos tener instalado virtualenv en nuestro sistema, dejare un ejemplo de como instalarlo en python
 
 ```bash
-pip3 install virtualenv
+pip install virtualenv
 ```
 
 Luego en la carpeta en donde se va a clonar el proyecto creamos nuestro entorno
