@@ -14,7 +14,9 @@ _Aplicación que nos permite convertir el formato de imagenes  JPG, PNG y GIF.)_
 
 bashPillow es una biblioteca para el tratamiento y edición de imágenes que hereda de PIL. Pillow soporta gran cantidad de formatos de imagen, entre ellos, los más comunes: JPG, PNG y GIF.
 
-$>pip install pillow
+```bash
+pip install pillow
+```
 
 Se ejecuta este comando en Python para importar la libreria de Pillow, antes de ejecutar la aplicación.
 
