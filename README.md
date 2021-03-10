@@ -77,7 +77,10 @@ _Este proyecto fue construido en_
 
 ## Despliegue 📦
 
+Se utilizo marquina vitual de google con Sistema Operativo Ubuntu 18 server que cuenta con un servidor web Enginx, direccion IP http://35.224.41.245/
+
 
 ## Autores ✒️
 
+Equipo de Python :heartpulse:
 
