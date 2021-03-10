@@ -8,7 +8,7 @@ _Aplicación que nos permite convertir el formato de imagenes bmp, jpg, png, gif
 -python3
 -pillow
 ```
-* **Librerias Importadas** :bookmark_tabs:
+## Librerias Importadas** :bookmark_tabs:
 
 ***Pillow, la biblioteca Python para tratamiento de imágenes***
 
@@ -59,21 +59,23 @@ también se puede ejecutar de la siguiente manera
 
 ## Comentarios Código Aplicación Web Lenguaje Python :left_speech_bubble:
 
-    **from PIL import Image** Se está importando la libreria. El módulo (Image) proporciona una clase con el mismo nombre que se utiliza para representar una imagen PIL. El módulo también proporciona una serie de funciones de fábrica, incluidas funciones para cargar imágenes desde archivos y crear nuevas imágenes.
+**from PIL import Image** Se está importando la libreria. El módulo (Image) proporciona una clase con el mismo nombre que se utiliza para representar una imagen PIL. El módulo también proporciona una serie de funciones de fábrica, incluidas funciones para cargar imágenes desde archivos y crear nuevas imágenes.
                       
-    **import os** El módulo nos permite acceder a funcionalidades dependientes del Sistema Operativo, sobre todo, aquellas que nos refieren información sobre el entorno del mismo y nos permiten manipular la estructura de directorios (para leer y escribir archivos).
-    **import sys** Este módulo provee acceso a algunas variables usadas o mantenidas por el intérprete y a funciones que interactúan fuertemente con el intérprete.
-     **import sys** Este módulo provee acceso a algunas variables usadas o mantenidas por el intérprete y a funciones que interactúan fuertemente con el intérprete.
-
-
+**import os** El módulo nos permite acceder a funcionalidades dependientes del Sistema Operativo, sobre todo, aquellas que nos refieren información sobre el entorno del mismo y nos permiten manipular la estructura de directorios (para leer y escribir archivos).
+          
+**import sys** Este módulo provee acceso a algunas variables usadas o mantenidas por el intérprete y a funciones que interactúan fuertemente con el intérprete.
 
           
   ## Construido con 🛠️
 
 _Este proyecto fue construido en _
 
-* [Visual Studio Code ](https://code.visualstudio.com/) - Herramenta Utilazada 
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
+* [Visual Studio Code ](https://code.visualstudio.com/) - Edición de código Redefinido. 
+
+
+## Despliegue 📦
+
+
+## Autores ✒️
 
 
