@@ -1,6 +1,6 @@
-# PYTHON_APP
+ # PYTHON_APP WEB
 
-Aplicación que nos permite convertir el formato de imagenes 
+_Aplicación que nos permite convertir el formato de imagenes_ 
 
 ## Requisitos 
 ```list
