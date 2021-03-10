@@ -8,7 +8,7 @@ _Aplicación que nos permite convertir el formato de imagenes  JPG, PNG y GIF.)_
 -python3
 -pillow
 ```
-## Librerias Importadas** :bookmark_tabs:
+## Librerias Importadas :bookmark_tabs:
 
 ***Pillow, la biblioteca Python para tratamiento de imágenes***
 
