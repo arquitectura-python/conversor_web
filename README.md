@@ -2,7 +2,7 @@
 
 _Aplicación que nos permite convertir el formato de imagenes  JPG, PNG y GIF.)_ 
 
-## Requisitos  📋
+## Dependencias   📋
 ```list
 -flask
 -python3
