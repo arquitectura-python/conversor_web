@@ -67,6 +67,8 @@ también se puede ejecutar de la siguiente manera
           
 **import sys** Este módulo provee acceso a algunas variables usadas o mantenidas por el intérprete y a funciones que interactúan fuertemente con el intérprete.
 
+**Flask** es un marco web de Python pequeño y ligero que proporciona herramientas y funciones útiles que hacen que crear aplicaciones web en Python sea más fácil. Ofrece a los desarrolladores flexibilidad y un marco más accesible para los nuevos desarrolladores ya que puede crear una aplicación web rápidamente usando únicamente un archivo Python. Flask también es extensible y no fuerza una estructura de directorio concreta ni requiere código estándar complicado antes de iniciarse.
+
           
   ## Construido con 🛠️
 
