@@ -95,10 +95,14 @@ Se utilizo marquina vitual de google con Sistema Operativo Ubuntu 18 server que 
 
 ## Autores ✒️
 
-* **Danilo Quintero** - *Desarrollador Backend* - [Danilo23](https://github.com/Danilo23)
-* **Angel Mondragón** - *Desarrollador Backend* - [amondrave](https://github.com/amondrave)
-* **Jhonatan Calderon** - *Desarrollador frontend* - [JhonatanCalderon12](https://github.com/JhonatanCalderon12)
-* **Angela Acevedo** - *Desarrollador frontend* - [Angela2400](https://github.com/Angela2400)
+* **Danilo Quintero** - *Desarrollador Backend* - [Danilo23](https://github.com/Danilo23) :heartpulse:
+
+* **Angel Mondragón** - *Desarrollador Backend* - [amondrave](https://github.com/amondrave) :heartpulse:
+
+* **Jhonatan Calderon** - *Desarrollador frontend* - [JhonatanCalderon12](https://github.com/JhonatanCalderon12) :heartpulse:
+
+* **Angela Acevedo** - *Desarrollador frontend* - [Angela2400](https://github.com/Angela2400) :heartpulse:
+
 * **Adriana Quijano** - *Documentador* - [adriana05](https://github.com/adriana05)
  :heartpulse:
 
