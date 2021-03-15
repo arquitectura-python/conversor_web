@@ -45,6 +45,17 @@ Una vez tenemos nuestro entorno activo debemos instalar los requerimientos
 ```bash
 pip install -r requirements.txt
 ```
+En caso de tener error en el comando anterior, intentar intalando las dependencias de la siguiente manera
+
+```bash
+pip install flask
+```
+```bash
+pip install Pillow
+```
+```bash
+pip install uwsgi
+```
 
 ## Ejecutar aplicacion :eject_button:
 
@@ -79,10 +90,15 @@ _Este proyecto fue construido en_
 
 ## Despliegue 📦
 
-Se utilizo marquina vitual de google con Sistema Operativo Ubuntu 18 server que cuenta con un servidor web Enginx, direccion IP http://35.224.41.245/
+Se utilizo marquina vitual de google con Sistema Operativo Ubuntu 18 server que cuenta con un servidor web Nginx, direccion IP http://35.224.41.245/
 
 
 ## Autores ✒️
 
-Equipo de Python :heartpulse:
+* **Danilo Quintero** - *Desarrollador Backend* - [Danilo23](https://github.com/Danilo23)
+* **Angel Mondragón** - *Desarrollador Backend* - [amondrave](https://github.com/amondrave)
+* **Jhonatan Calderon** - *Desarrollador frontend* - [JhonatanCalderon12](https://github.com/JhonatanCalderon12)
+* **Angela Acevedo** - *Desarrollador frontend* - [Angela2400](https://github.com/Angela2400)
+* **Adriana Quijano** - *Documentador* - [adriana05](https://github.com/adriana05)
+ :heartpulse:
 
