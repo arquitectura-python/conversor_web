@@ -45,7 +45,7 @@ Una vez tenemos nuestro entorno activo debemos instalar los requerimientos
 ```bash
 pip install -r requirements.txt
 ```
-En caso de tener error en el comando anterior, intentar intalando las dependencias de la siguiente manera
+En caso de tener error en el comando anterior, instalamos las dependencias de la siguiente manera
 
 ```bash
 pip install flask
